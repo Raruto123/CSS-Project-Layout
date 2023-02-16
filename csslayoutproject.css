@@ -1,0 +1,542 @@
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-family: work sans, sans-serif;
+}
+
+/*div{
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}*/
+
+::selection{
+    background-color: #00b39b;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*le header avec le logo et les liens de navigation*/
+.navbar{
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: light;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    background-color: white;
+    margin-left: 120px;
+}
+.navlinks{
+    margin-right: 120px;
+    width: 450px;
+}
+.navlinks ol{
+    list-style: none;
+}
+.navlinks a{
+    text-decoration: none;
+    color: #747474;
+}
+.navlinks ol li{
+    width: 100%;
+}
+.navlinks a:hover{
+    color: #01BFA5;
+}
+.navlinks > ol{
+    display: flex;
+}
+.subnavlinks{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    box-shadow: 5px 5px 6px black;
+}
+.navlinks > ol li:hover .subnavlinks{
+    display: block;
+}
+.subnavlinks li{
+    text-align: justify;
+}
+.subnavlinks a:hover{
+    background-color: rgba(200, 200, 200, 0.1);
+}
+/*le header avec le logo et les liens de navigation*/
+
+/*la présentation de l'entreprise*/
+.presentation{
+    margin:2.0625rem auto 3.75rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.title1{
+    color: #01BFA5;
+}
+.paragraphs{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    color: #747474;
+}
+/*la présentation de l'entreprise*/
+
+/*les services de l'entreprise*/
+.services{
+    margin:3.75rem auto 2.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.patients{
+    margin: 10px;
+    background-color:#01bfa5;
+    color: white;
+    text-align: left;
+    border:#01BFA5;
+    border-radius: 10px;
+}
+.patients select{
+    background-color: #01BFA5;
+    border-color: #01BFA5;
+    color: white;
+    font-size: larger;
+}
+.patients select:hover{
+    background-color: #3DD2B9;
+    border-color: #3DD2B9;
+    color: white;
+    font-size: larger;
+}
+.patients:hover{
+    background-color: #3DD2B9
+}
+.docteurs{
+    margin: 10px;
+    background-color: #105bcc;
+    color: white;
+    text-align: left;
+    border:#01BFA5;
+    border-radius: 10px;
+}
+.docteurs select{
+    background-color: #105bcc;
+    border-color: #105bcc;
+    color: white;
+    font-size: larger;
+}
+.docteurs select:hover{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    color: white;
+    font-size: larger;
+}
+.docteurs:hover{
+    background-color: #528FE2;
+}
+.cliniques{
+    margin: 10px;
+    background-color: #142233;
+    color: white;
+    text-align: left;
+    border:#01BFA5;
+    border-radius: 10px;
+}.cliniques select{
+    background-color: #142233;
+    border-color: #142233;
+    color: white;
+    font-size: larger;
+}
+.cliniques select:hover{
+    background-color: #323d49;
+    border-color: #323d49;
+    color: white;
+    font-size: larger;
+}
+.cliniques:hover{
+    background-color: #323d49;
+}
+.specialistes{
+    display: block;
+}
+/*les services de l'entreprise*/
+
+/*les marques de l'entreprise*/
+.marques{
+    margin: 2.5rem auto 3.125rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items:center;
+}
+.petit_speech{
+    margin: .25em 0 .35em;
+    width: 38%;
+    color: #01BFA5;
+}
+.les_marques a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    color:#747474 ;
+    align-items: center;
+}
+/*les marques de l'entreprise*/
+
+/*Statisques de l'entreprise*/
+.stats{
+    margin: 3.125rem auto 5.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(rgba(215,245,245,0.5), rgba(215,245,245,0)), url(/CSSLayoutProject/img/logo.png);
+    display:flex;
+    justify-content:space-between ;
+}
+.real_stats{
+    display: flex;
+    text-align: center;
+}
+.before_stats{
+    margin-top: 2em;
+}
+.real_stats h1,
+.before_stats h1{
+    color: #01BFA5;
+}
+.countries13{
+    margin: 30px;
+    padding: 90px;
+    border: white;
+    border-radius: 10px;
+    background-color: white;
+}
+.rendez_vous15M{
+    margin: 30px;
+    padding: 90px;
+    border: white;
+    border-radius: 10px;
+    background-color: white;
+}
+.patients90M{
+    margin: 10px;
+    padding: 90px;
+    border: white;
+    border-radius: 10px;
+    background-color: white;
+}
+.active_doctors210k{
+    margin: 10px;
+    padding: 90px;
+    border: white;
+    border-radius: 10px;
+    background-color: white;
+}
+/*Statisques de l'entreprise*/
+
+/*les bureaux de l'entreprise à travers le monde*/
+.nos_bureaux{
+    margin-top:5.5rem;
+    margin-bottom: 5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.phrase_introductive{
+    margin: 0 auto 4.1875rem;
+}
+.phrase_introductive, .phrase_introductive h1{
+    text-align: center;
+}
+.phrase_introductive h1{
+    color: #01BFA5;
+}
+.toute_la_galerie{
+    margin: 0 -10px;
+}
+.warsaw_barcelona_munich{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.warsaw{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.warsaw a{
+    border: black;
+    border-radius: 20px;
+}
+.warsaw a{
+    text-decoration: none;
+    color: black;
+}
+.warsaw a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.warsaw a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.warsaw:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.barcelona{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.barcelona a{
+    border: black;
+    border-radius: 20px;
+}
+.barcelona a{
+    text-decoration: none;
+    color: black;
+}
+.barcelona a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.barcelona a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.barcelona:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.munich{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.munich a{
+    border: black;
+    border-radius: 20px;
+}
+.munich a{
+    text-decoration: none;
+    color: black;
+}
+.munich a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.munich a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.munich:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.istanbul_rome_bologna{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.istanbul{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.istanbul a{
+    border: black;
+    border-radius: 20px;
+}
+.istanbul a{
+    text-decoration: none;
+    color: black;
+}
+.istanbul a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.istanbul a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.istanbul:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.rome{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.rome a{
+    border: black;
+    border-radius: 20px;
+}
+.rome a{
+    text-decoration: none;
+    color: black;
+}
+.rome a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.rome a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.rome:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.bologna{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.bologna a{
+    border: black;
+    border-radius: 20px;
+}
+.bologna a{
+    text-decoration: none;
+    color: black;
+}
+.bologna a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.bologna a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.bologna:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.curitiba_riodejaneiro_mexicocity{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.curitiba{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.curitiba a{
+    border: black;
+    border-radius: 20px;
+}
+.curitiba a{
+    text-decoration: none;
+    color: black;
+}
+.curitiba a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.curitiba a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.curitiba:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.riodejaneiro{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.riodejaneiro a{
+    border: black;
+    border-radius: 20px;
+}
+.riodejaneiro a{
+    text-decoration: none;
+    color: black;
+}
+.riodejaneiro a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.riodejaneiro a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.riodejaneiro:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+.mexicocity{
+    border-radius: 5px;
+    padding: 10px;
+    width: 33.33%;
+}
+.mexicocity a{
+    border: black;
+    border-radius: 20px;
+}
+.mexicocity a{
+    text-decoration: none;
+    color: black;
+}
+.mexicocity a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.mexicocity a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+.mexicocity:hover{
+    box-shadow:1px 5px 6px #f7f7f7;
+}
+/*les bureaux de l'entreprise à travers le monde*/
+
+/*la zone avant le footer*/
+.rejoignez_nous{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.rejoignez_nous a button{
+    background-color: #528FE2;
+    border-color: #528FE2;
+    border-radius: 5px;
+}
+.rejoignez_nous a button:hover{
+    cursor: pointer;
+    background-color:#105bcc ;
+}
+/*la zone avant le footer*/
+
+/*fin de la page*/
+footer{
+    text-align: center;
+    color:#747474 ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.phrase1 a{
+    text-decoration: none;
+}
+.phrase1 a:hover{
+    text-decoration: underline;
+}
+/*fin de la page*/
